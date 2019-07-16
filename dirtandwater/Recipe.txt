@@ -1,0 +1,214 @@
+RECIPE
+----------------------------------------------------
+v1.0
+----------------------------------------------------
+	output = ' leave_wall 6',
+	recipe = {
+		{'stick','','stick'},
+		{'stick','leaves2', 'stick'},
+		{'stick', '','stick'},
+ =====
+	output = ' leave_chair',
+	recipe = {
+		{' :stick','',''},
+		{' leave_slab',' leave_slab', ''},
+		{' :stick', ' :stick', ''},
+ =====
+	output = 'leave_table',
+	recipe = {
+		{'',' leave_slab', ''},
+		{'', ' :stick', ''},
+ =====
+	output = 'leave_stairs 24',
+	recipe = {
+		{' comp_leaves3','', ''},
+		{' comp_leaves3', ' comp_leaves3', ''},
+		{' comp_leaves3', ' comp_leaves3', ' comp_leaves3'},
+ =====
+	output = '  comp_leaves3',
+	recipe = {
+		{' leave_stairs', ' leave_stairs', ''},
+		{' leave_stairs', ' leave_stairs', ''},
+ =====
+	output = ' leave_slab 12',
+	recipe = {
+		{' comp_leaves3', ' comp_leaves3', ' comp_leaves3'},
+ =====
+	output = '  comp_leaves3',
+	recipe = {
+		{' leave_slab', ' leave_slab', ''},
+		{' leave_slab', ' leave_slab', ''},
+ =====
+	output = 'glow leave 4',
+	recipe = {
+		{' :torch',' comp_leaves1', ' :torch'},
+		{' :glass', ' comp_leaves1', ' :glass'},
+		{' :torch', ' comp_leaves1', ' :torch'},
+ =====
+	output = ' steel glow leave 4',
+	recipe = {
+		{' :torch',' comp_leaves1', ' :torch'},
+		{' :glass', ' :steel_ingot', ' :glass'},
+		{' :torch', ' comp_leaves1', ' :torch'},
+ =====
+	output = ' glow gold leave 4',
+	recipe = {
+		{' :torch',' comp_leaves2', ' :torch'},
+		{' :glass', ' :gold_ingot', ' :glass'},
+		{' :torch', ' comp_leaves2', ' :torch'},
+ =====
+	output = ' :leaves 9',
+	recipe = {
+		{' comp_leaves1'},
+ =====
+	output = ' comp_leaves1 9',
+	recipe = {
+		{' comp_leaves2'},
+ =====
+	output = ' comp_leaves2 9',
+	recipe = {
+		{' comp_leaves3'},
+ =====
+	output = ' comp_leaves1',
+	recipe = {
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+ =====
+	output = ' comp_leaves2',
+	recipe = {
+		{' comp_leaves1', ' comp_leaves1', ' comp_leaves1'},
+		{' comp_leaves1', ' comp_leaves1', ' comp_leaves1'},
+		{' comp_leaves1',' comp_leaves1', ' comp_leaves1'},
+ =====
+	output = ' comp_leaves3',
+	recipe = {
+		{' comp_leaves2', ' comp_leaves2', ' comp_leaves2'},
+		{' comp_leaves2', ' comp_leaves2', ' comp_leaves2'},
+		{' comp_leaves2',' comp_leaves2', ' comp_leaves2'},
+ =====
+	output = ' :dirt',
+	recipe = {
+		{' :grass_1', ' :grass_1', ' :grass_1'},
+		{' :grass_1', ' :grass_1', ' :grass_1'},
+		{' :grass_1', ' :grass_1', ' :grass_1'},
+ =====
+	output = ' :dirt',
+	recipe = {
+		{' :junglegrass', ' :junglegrass', ' :junglegrass'},
+		{' :junglegrass', ' :junglegrass', ' :junglegrass'},
+		{' :junglegrass', ' :junglegrass', ' :junglegrass'},
+ =====
+	output = ' :dirt',
+	recipe = {
+		{' :dry_grass_1', ' :dry_grass_1', ' :dry_grass_1'},
+		{' :dry_grass_1', ' :dry_grass_1', ' :dry_grass_1'},
+		{' :dry_grass_1', ' :dry_grass_1', ' :dry_grass_1'},
+ =====
+	output = ' :dirt 3',
+	recipe = {
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+		{'group:leaves', ' :stick', 'group:leaves'},
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+ =====
+	output = ' :dirt 6',
+	recipe = {
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+		{'group:leaves', 'group:wood', 'group:leaves'},
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+ =====
+	output = ' :dirt 9',
+	recipe = {
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+		{'group:leaves', 'group:tree', 'group:leaves'},
+		{'group:leaves', 'group:leaves', 'group:leaves'},
+ =====
+	output = 'bucket:bucket_water',
+	recipe = {
+		{' comp_leaves2', ' comp_leaves2', ' comp_leaves2'},
+		{' comp_leaves2', 'bucket:bucket_empty', ' comp_leaves2'},
+		{' comp_leaves2', ' comp_leaves2', ' comp_leaves2'},
+ =====
+	output = ' :water_source',
+	recipe = {
+		{' comp_leaves3', ' comp_leaves3', ' comp_leaves3'},
+		{' comp_leaves3', ' comp_leaves3', ' comp_leaves3'},
+		{' comp_leaves3', ' comp_leaves3', ' comp_leaves3'},
+-----------------------------------------------------------------------------
+-- SNOW and ICE melting
+-----------------------------------------------------------------------------
+	output = "river_water_source",
+	recipe = "snow",
+	cooktime = 360,
+ =====
+	output = "river_water_source",
+	recipe = "snowblock",
+	cooktime = 360,
+ =====
+	output = "river_water_source",
+	recipe = "ice",
+	cooktime = 360,
+
+-----------------------------------------------------------------------------
+v1.01 NEW
+-----------------------------------------------------------------------------
+
+	output = leave_shelf 6',
+	recipe = {
+		{'group:wood', 'group:wood', 'group:wood'},
+		{'comp_leaves2', 'comp_leaves2', 'comp_leaves2'},
+		{'group:wood', 'group:wood', 'group:wood'},
+ =====
+	output = 'leave_half_shelf 2',
+	recipe = {
+		{'', 'leave_shelf', ''},
+ =====
+	output = 'leave_shelf',
+	recipe = {
+		{'', 'leave_half_shelf', 'leave_half_shelf'},
+ =====
+	output = 'leaves chest',
+	recipe = {
+		{'group:wood', 'group:wood', 'group:wood'},
+		{'group:wood', 'comp_leaves2', 'group:wood'},
+		{'group:wood', 'group:wood', 'group:wood'},
+ =====
+	output = 'leaves_small_box 2',
+	recipe = {
+		{'', 'group:wood', ''},
+		{'default:stick', 'dirtandwater:comp_leaves2', 'default:stick'},
+		{'group:wood', 'group:wood', 'group:wood'},
+ =====
+	output = 'dirtandwater:leaves_cabinet',
+	recipe = {
+		{'group:wood', 'dirtandwater:comp_leaves2', 'group:wood'},
+		{'dirtandwater:comp_leaves2', 'group:wood', 'dirtandwater:comp_leaves2'},
+		{'group:wood', 'group:wood', 'group:wood'},
+ =====
+	output = 'dirtandwater:leaves_cabinet2', --leaves cabinet bottom
+	recipe = {
+		{'group:wood', 'group:wood', 'group:wood'},
+		{'dirtandwater:comp_leaves2', 'group:wood', 'dirtandwater:comp_leaves2'},
+		{'group:wood', 'group:wood', 'group:wood'},
+
+ =====
+	output = 'dirtandwater:leave_half_cabinet 2',
+	recipe = {
+		{'dirtandwater:leaves_cabinet', '', ''},
+ =====
+	output = 'dirtandwater:leaves_cabinet',
+	recipe = {
+		{'dirtandwater:leave_half_cabinet', 'dirtandwater:leave_half_cabinet', ''},
+ =====
+	output = 'dirtandwater:leave_dhalf_shelf',
+	recipe = {
+		{'dirtandwater:leave_half_shelf', '', ''},
+ =====
+	output = 'dirtandwater:leave_half_shelf',
+	recipe = {
+		{'dirtandwater:leave_dhalf_shelf', '', ''},
+ =====
+
+	output = 'dirtandwater:leave_half_cabinet_b 2',
+	recipe = {
+		{'dirtandwater:leaves_cabinet2', '', ''},

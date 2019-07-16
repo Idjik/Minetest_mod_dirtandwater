@@ -1,15 +1,9 @@
--- created by Kalimas
-minetest.register_alias("compressed leaves lv1", "dirtandwater:comp_leaves1")
-minetest.register_alias("compressed leaves lv2", "dirtandwater:comp_leaves2")
-minetest.register_alias("compressed leaves lv3", "dirtandwater:comp_leaves3")
-minetest.register_alias("Glowing leaves", "dirtandwater:glow_l_frame")
-minetest.register_alias("Glowing gold leaves", "dirtandwater:glow_gold_l")
-minetest.register_alias("Glowing steel leaves", "dirtandwater:steel_glow_l_l")
-minetest.register_alias("compressed leaves stairs", "dirtandwater:leave_stairs")
-minetest.register_alias("compressed leaves slab", "dirtandwater:leave_slab")
-minetest.register_alias("compressed leaves table", "dirtandwater:comp_leave_table")
-minetest.register_alias("compressed leaves wall", "dirtandwater:leave_wall")
-minetest.register_alias("compressed leaves chair", "dirtandwater:leave_chair")
+-- created by Kalimas, kalimas@gmail.com
+-- Load API
+
+dofile(minetest.get_modpath(minetest.get_current_modname()).."/storages.lua")
+dofile(minetest.get_modpath(minetest.get_current_modname()).."/alias.lua")
+----------------------------
 
 --COMPRESSED LEAVES Lv 1 to 3
 minetest.register_node("dirtandwater:comp_leaves1", {
@@ -65,7 +59,7 @@ minetest.register_node("dirtandwater:glow_l_frame", {
 	drop = "dirtandwater:glow_l_frame",
     sounds = default.node_sound_glass_defaults(),
     groups = {cracky=3,oddly_breakable_by_hand=3},
-	light_source = 6,
+	light_source = 9,
 
 })
 -- Glow steel leave
@@ -89,7 +83,7 @@ minetest.register_node("dirtandwater:steel_glow_l", {
 	drop = "dirtandwater:steel_glow_l",
     sounds = default.node_sound_glass_defaults(),
     groups = {cracky=3,oddly_breakable_by_hand=3},
-	light_source = 9,
+	light_source = 14,
 
 })
 -- Glow gold leaves
@@ -113,7 +107,7 @@ minetest.register_node("dirtandwater:glow_gold_l", {
 	drop = "dirtandwater:glow_gold_l",
     sounds = default.node_sound_glass_defaults(),
     groups = {cracky=3,oddly_breakable_by_hand=3},
-	light_source = 24,
+	light_source = 32,
 
 })
 -- STAIRS, SLAB, Table, chair
@@ -190,7 +184,14 @@ minetest.register_node("dirtandwater:leave_slab", {
 -- Register table
 minetest.register_node("dirtandwater:comp_leave_table", {
     description = "Compressed leaves table",
-    tiles = {"comp_leaves3.png"},
+    tiles = {
+	"node_top.png",
+	"comp_leaves3.png",
+	"comp_leaves3.png",
+	"comp_leaves3.png",
+	"comp_leaves3.png",
+	"comp_leaves3.png",
+	},
 	is_ground_content = false,
     groups = {snappy=1, oddly_breakable_by_hand=1},
 	sounds = default.node_sound_leaves_defaults(),

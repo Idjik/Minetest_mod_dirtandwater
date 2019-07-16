@@ -1,0 +1,32 @@
+v1.00
+-------------------------------------
+Turns leaves, snow and ice to water.
+Turns grass and leaves to dirt.
+Turns leaves to compressed fuel.
+
+compressed leaves lv1
+compressed leaves lv2
+compressed leaves lv3
+compressed leaves stairs
+compressed leaves slab
+compressed leaves table
+compressed leaves wall
+compressed leaves chair
+Glowing leaves
+Glowing gold leaves
+Glowing steel leaves
+-----------------------------------
+v1.01
+-----------------------------------
+Glowing *.*- added more light.
+New table top.
+Added simple storages:
+- Leaves chest
+- Leaves shelf
+- Leaves half shelf
+- Leaves small box
+- Leaves cabinet
+- Leaves half cabinet
+- Leaves down half shelf
+- Leaves cabinet bottom
+- Leaves half cabinet bottom
